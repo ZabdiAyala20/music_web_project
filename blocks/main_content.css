@@ -1,0 +1,15 @@
+.main_content{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   color: white;
+}
+.main__content-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 36px;
+    font-style: oblique;
+    box-shadow: 0  3px  white;
+}

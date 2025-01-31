@@ -11,38 +11,68 @@
     <body>
         <div class="page">
             <header class="header">
+            <div class="header__container">
                 <h1 class="header__title">Bienvenido al periodico musical</h1>
-                <h3 class="header_subtitle">Vive, escucha, informate y sobre todo siente la musica </h3>
                 <ol class="header__navigation_links-container">
-                    <li class="header header__navigation-link"><a href="#musica">tu musica</a></li>
-                    <li><a href="#about us">Quienes somos</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                    <li><a href="#reportes">Reportes</a></li>
-                    <li><a href="#suscription">suscription</a></li>
+                    <li ><button class="header__navigation_button"><a class="navigation__link" href="#musica">tu musica</a></button></li>
+                    <li ><button class="header__navigation_button"><a class="navigation__link" href="#about us">Quienes somos</a></button></li>
+                    <li> <button class="header__navigation_button"><a class="navigation__link" href="#contactos">Contactos</a></button></li>
+                    <li> <button class="header__navigation_button"><a class="navigation__link" href="#reportes">Reportes</a></button></li>
+                    <li> <button class="header__navigation_button"><a class="navigation__link" href="#suscription">suscription</a></button></li>
                 </ol>
-                <div class="header header__contact_button-container">
-                    <button class="header header__contact-button"><a href="#gmail">Contctanos</a></button>
-                </div>
+            </div>
+            <h3 class="header_subtitle">Vive, escucha, informate y sobre todo siente la musica </h3>    
             </header>
             <main class="content">
+                <div class="header header__contact_button-container">
+                    <button class="header header__contact-button"><a href="#gmail" class="button__contact_link">Contactanos</a></button>
+                </div>  
                 <section class="about_us">
                     <h2 class="about_us-title">Te actualizamos con las ultimas noticias sobre musica</h2>
                     <p class="about_us-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet officia iusto quae, quas, eaque voluptates, ex consectetur suscipit doloribus assumenda qui maiores rem architecto corporis! Autem id reiciendis nulla labore!</p>
                 </section>
+                <!-- seccion de formulario para suscripcion a la pagina -->
                 <section class="suscription">
-                    <h2 class="suscription__title">suscribete a nuestra pagina</h2>
                     <form class="suscription__form">
-                        <fieldset>
-                            <label class="suscription_form" for="name">Nombre--</label>
+                        <h2 class="suscription__title">suscribete a nuestra pagina</h2>
+                        <fieldset class="personal_data">
+                            <legend>Datos personales</legend>
                             <input type="text" name="name" id="name" required placeholder="Coloca tu nombre">
-                        </fieldset>
-                        <fieldset>
-                            <label class="suscription__form" for="gmail">gmail--</label>
                             <input type="email" name="email" id="email" required placeholder="email@gmail.com">
+                            <label for="terms">Acepto los términos de uso</label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                                
+                            <button type="submit">suscribirse</button>
+                        </fieldset>
+                        <fieldset class="payment_data">
+                            <legend>Datos de pago</legend>
+                            <input type="text" name="card_number" id="card_number" required placeholder="Numero de tarjeta">
+                            <input type="text" name="card_name" id="card_name" required placeholder="Nombre del titular">
+                            <input type="text" name="card_date" id="card_date" required placeholder="Fecha de expiracion">
+                            <input type="text" name="card_cvv" id="card_cvv" required placeholder="CVV">
+
                         </fieldset>
                     </form>
                 </section>
+                <section class="main_content">
+                    <h2 class="main__content-title">Ultimas noticias</h2>
+                    <h3>Conciertos de invierno 2024-2025</h3>
+                    <p class="main__news-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum quaerat totam impedit eaque tempore! Temporibus ullam perspiciatis reiciendis in eius, dicta eos minus, maxime nesciunt possimus, modi ad culpa rerum!</p>
+                    <h4>Playlist del dìa</h4>
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DXbITWG1ZJKYt?si=f03ae540b7894951">Jazz classics</a>
+                </section>
             </main>
+            <footer class="footer">
+                <h3>Redes sociales</h3>
+                <ol class="footer__list">
+                    <li><a href="#instagram"></a></li>
+                    <li><a href="#linkedin"></a></li>
+                    <li><a href="#spotify"></a></li>
+                </ol>
+                <p>Nuestra plataforma esta en funcionamiento 24/7</p>
+                <p>Derechos de autor</p>
+            </footer>
         </div>
     </body>
+    <script src="./script.js"> </script>
 </html>
