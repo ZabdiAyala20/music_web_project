@@ -1,0 +1,16 @@
+.about_us-title{
+    color: white;
+    font-weight: 900;
+    font-size: 29px;
+    border-style:groove;
+    border-bottom:0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 10px;
+}
+.about_us-text{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
