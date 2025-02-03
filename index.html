@@ -18,15 +18,21 @@
                     <li ><button class="header__navigation_button"><a class="navigation__link" href="#about us">Quienes somos</a></button></li>
                     <li> <button class="header__navigation_button"><a class="navigation__link" href="#contactos">Contactos</a></button></li>
                     <li> <button class="header__navigation_button"><a class="navigation__link" href="#reportes">Reportes</a></button></li>
-                    <li> <button class="header__navigation_button"><a class="navigation__link" href="#suscription">suscription</a></button></li>
+                    <li> <button class="header__navigation_button-suscription"><a class="navigation__link" href="#suscription">suscription</a></button></li>
                 </ol>
             </div>
             <h3 class="header_subtitle">Vive, escucha, informate y sobre todo siente la musica </h3>    
             </header>
             <main class="content">
+               
                 <div class="header header__contact_button-container">
-                    <button class="header header__contact-button"><a href="#gmail" class="button__contact_link">Contactanos</a></button>
+                    <button class="header header__contact-button"><a class=" button__contact_link" href="https://wa.me/524421419430" target="_blank">Contactanos</a></button>
                 </div>  
+                <!-- aqui va a salir el chat de contact-->
+                    <div class="chat__contact-container">
+                        
+                    </div>
+
                 <section class="about_us">
 
                     <h2 class="about_us-title">Te actualizamos con las ultimas noticias sobre musica</h2>
@@ -34,26 +40,9 @@
                 </section>
                 <!-- seccion de formulario para suscripcion a la pagina -->
                 <section class="suscription">
-                    <form class="suscription__form">
-                        <h2 class="suscription__title">suscribete a nuestra pagina</h2>
-                        <fieldset class="personal_data">
-                            <legend>Datos personales</legend>
-                            <input type="text" name="name" id="name" required placeholder="Coloca tu nombre">
-                            <input type="email" name="email" id="email" required placeholder="email@gmail.com">
-                            <label for="terms">Acepto los términos de uso</label>
-                            <input type="checkbox" id="terms" name="terms" required>
-                                
-                            <button type="submit">suscribirse</button>
-                        </fieldset>
-                        <fieldset class="payment_data">
-                            <legend>Datos de pago</legend>
-                            <input type="text" name="card_number" id="card_number" required placeholder="Numero de tarjeta">
-                            <input type="text" name="card_name" id="card_name" required placeholder="Nombre del titular">
-                            <input type="text" name="card_date" id="card_date" required placeholder="Fecha de expiracion">
-                            <input type="text" name="card_cvv" id="card_cvv" required placeholder="CVV">
+                    <div class="form__container">
 
-                        </fieldset>
-                    </form>
+                    </div>
                 </section>
                 <section class="main_content">
                     <h2 class="main__content-title">Ultimas noticias</h2>
@@ -75,6 +64,39 @@
                 <p>Derechos de autor</p>
             </footer>
         </div>
+        <!--Templates-->
+
+        <template id="contact__chat">
+            <div class="contact__chat_container">
+                <h2>Chat de contacto</h2>
+                <input type="text" name="name" id="name" placeholder="Coloca tu nombre">
+                <input type="email" name="email" id="email" placeholder="">
+            </div>
+        </template>
+
+        <template id="suscription__form">
+            <form class="suscription__form">
+                <button class="form__close-button">x</button>
+                <h2 class="suscription__title">suscribete a nuestra pagina</h2>
+                <fieldset class="personal_data">
+                    <legend>Datos personales</legend>
+                    <input class="input__name" type="text" name="name" id="name"  placeholder="Coloca tu nombre">
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                    <label for="terms">Acepto los términos de uso</label>
+                    <input type="checkbox" id="terms" name="terms" >
+                        
+                    <button type="submit">suscribirse</button>
+                </fieldset>
+                <fieldset class="payment_data">
+                    <legend>Datos de pago</legend>
+                    <input type="text" name="card_number" id="card_number" placeholder="Numero de tarjeta">
+                    <input type="text" name="card_name" id="card_name" placeholder="Nombre del titular">
+                    <input type="text" name="card_date" id="card_date"  placeholder="Fecha de expiracion">
+                    <input type="text" name="card_cvv" id="card_cvv" placeholder="CVV">
+
+                </fieldset>
+            </form>
+        </template>
     </body>
     <script src="./script.js"> </script>
 </html>

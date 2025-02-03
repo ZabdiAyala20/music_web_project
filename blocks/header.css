@@ -17,22 +17,32 @@
     padding: 0;
     display: flex;
     margin: auto;
-    
 }
 .header_subtitle{
     display: flex;
     justify-content: center;
 }
 .header__navigation_button{
-    background-color: salmon;
+    background-color: rgba(250, 128, 114, 0);
     border-style: none;
     border-radius: 5px;
     padding: 10px;
     transition: 1.0;
     cursor: pointer;
 }
+.header__navigation_button-suscription{
+    background-color: rgba(250, 128, 114, 0);
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 1.0;
+    cursor: pointer;
+}
+.header__navigation_button-suscription:hover{
+    background-color: rgb(244, 168, 155);
+}
 .header__navigation_button:hover{
-    background-color: rgb(244, 186, 176);
+    background-color: rgb(255, 181, 168);
 }
 .header__navigation_links-container{
     max-width: fit-content;
@@ -58,6 +68,7 @@
     width: fit-content;
     border-radius: 50px;
     padding: 10px;
+    transition: color 0.3s ease;
 }
 .header__contact-button:hover{
     background-color: rgb(244, 186, 176);
